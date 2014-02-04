@@ -1,0 +1,21 @@
+CROSS_HOST="x86_64-w64-mingw32"
+inherit cross
+
+NAME="mingw64-x86_64-libodfgen0.0"
+VERSION=0.0.4
+RELEASE=1
+CATEGORY="Devel"
+SUMMARY="Library for creating ODF documents for Win64 toolchain"
+DESCRIPTION="Library for creating OpenDocument Format documents"
+HOMEPAGE="http://libwpd.sourceforge.net/"
+SRC_URI="mirror://sourceforge/libwpd/libodfgen-${VERSION}.tar.xz"
+SRC_DIR="libodfgen-${VERSION}"
+
+CYGCONF_ARGS="--without-docs"
+
+src_install() {
+	cd ${B}
+	cyginstall bin_PROGRAMS=
+}
+
+KEEP_LA_FILES="none"
