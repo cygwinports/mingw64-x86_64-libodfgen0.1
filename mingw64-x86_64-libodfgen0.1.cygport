@@ -2,7 +2,7 @@ CROSS_HOST="x86_64-w64-mingw32"
 inherit cross
 
 NAME="mingw64-x86_64-libodfgen0.1"
-VERSION=0.1.3
+VERSION=0.1.6
 RELEASE=1
 CATEGORY="Libs"
 SUMMARY="ODF document library for Win64 toolchain"
